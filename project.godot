@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="EXAMEN_ELOY_GARCÍA"
+run/main_scene="res://node_2d2.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

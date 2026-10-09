@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cv0icypa225e2"]
+
+[ext_resource type="Script" uid="uid://ewt71gyntkj4" path="res://character_body_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://c2cmsfisst5pf" path="res://icon.svg" id="2_epypp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lfkbx"]
+size = Vector2(38, 50)
+
+[node name="Node2D" type="Node2D" unique_id=578226918]
+
+[node name="PERSONAJE" type="CharacterBody2D" parent="." unique_id=1651370779]
+script = ExtResource("1_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="PERSONAJE" unique_id=1826459472]
+scale = Vector2(0.296875, 0.390625)
+texture = ExtResource("2_epypp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PERSONAJE" unique_id=1717996395]
+shape = SubResource("RectangleShape2D_lfkbx")
+
+[node name="Camera2D" type="Camera2D" parent="PERSONAJE" unique_id=209871378]
+
+[node name="Timer" type="Timer" parent="PERSONAJE" unique_id=362060016]
+wait_time = 5.0
+autostart = true
